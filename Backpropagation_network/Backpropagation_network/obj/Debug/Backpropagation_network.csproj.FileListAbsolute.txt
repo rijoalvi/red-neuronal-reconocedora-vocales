@@ -1,0 +1,8 @@
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\bin\Debug\Backpropagation_network.exe
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\bin\Debug\Backpropagation_network.pdb
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\Backpropagation_network.Form1.resources
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\Backpropagation_network.Properties.Resources.resources
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\Backpropagation_network.csproj.GenerateResource.Cache
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\Backpropagation_network.exe
+C:\Documents and Settings\a60289\Desktop\Backpropagation\Backpropagation_network\Backpropagation_network\obj\Debug\Backpropagation_network.pdb
