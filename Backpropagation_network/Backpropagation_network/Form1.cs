@@ -88,8 +88,20 @@ namespace Backpropagation_network
                 dibujar = true;
             }
         }
-        private void hacerNada(object sender, EventArgs e)
+        private void borrarTodo()
         {
+            for (int fila = 0; fila < 16; fila++)
+            {
+                for (int col = 0; col < 16; col++)
+                {
+                    this.paneles[fila, col].BackColor = System.Drawing.Color.White;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.borrarTodo();
         }
     }
 }
