@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Backpropagation_network
 {
-    public partial class Form1 : Form
+    public partial class PantallaPrincipal : Form
     {
         /// <summary>
         /// Variables globales del sistema
@@ -17,10 +17,11 @@ namespace Backpropagation_network
         System.Windows.Forms.Panel [,] paneles = new Panel[20,20];
         bool dibujar = false;
 
-        public Form1()
+        public PantallaPrincipal()
         {
             InitializeComponent();
             this.crearCuadricula(this);
+            this.comboVocales.SelectedIndex = 0;
         }
 
 
@@ -29,9 +30,9 @@ namespace Backpropagation_network
             int ubicacionPanelX = 12;
             int ubicacionPanelY = 12;
 
-            for (int fila = 0; fila < 16; fila++)
+            for (int fila = 0; fila < 15; fila++)
             {
-                for (int col = 0; col < 16; col++)
+                for (int col = 0; col < 15; col++)
                 {
                     this.paneles[fila, col] = new System.Windows.Forms.Panel();
                     this.paneles[fila, col].Size = new System.Drawing.Size(25, 25);
@@ -45,7 +46,7 @@ namespace Backpropagation_network
                     this.paneles[fila, col].MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
                     formDestino.Controls.Add(this.paneles[fila, col]);
                     paneles[fila, col].Show();
-                    if (ubicacionPanelX < 387)
+                    if (ubicacionPanelX < 362)
                     {
                         ubicacionPanelX = ubicacionPanelX + 25;
                     }
@@ -65,9 +66,9 @@ namespace Backpropagation_network
         }
         private void panel1_MouseClick(object sender, EventArgs e)
         {
-            for (int fila = 0; fila < 16; fila++)
+            for (int fila = 0; fila < 15; fila++)
             {
-                for (int col = 0; col < 16; col++)
+                for (int col = 0; col < 15; col++)
                 {
                     if (dibujar)
                     {
@@ -90,9 +91,9 @@ namespace Backpropagation_network
         }
         private void borrarTodo()
         {
-            for (int fila = 0; fila < 16; fila++)
+            for (int fila = 0; fila < 15; fila++)
             {
-                for (int col = 0; col < 16; col++)
+                for (int col = 0; col < 15; col++)
                 {
                     this.paneles[fila, col].BackColor = System.Drawing.Color.White;
                 }
@@ -102,6 +103,11 @@ namespace Backpropagation_network
         private void button1_Click(object sender, EventArgs e)
         {
             this.borrarTodo();
+        }
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
